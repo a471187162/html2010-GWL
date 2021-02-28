@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../index/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="./pagin.css">
+    <script src="./pagination.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="col-main">
+            <!-- 顶部 -->
+            <div class="top-1">
+                <div class="top-nav">
+                    <ul>
+                        <li>欢迎光临文轩网!</li>
+                        <li>
+                            <a href="../login/login.html">
+                                请
+                                <span style="color: red;">
+                                    登录
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../register/zhuce.html">
+                                免费注册
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="top-nav-2">
+                        <li>我的文轩 v</li>
+                        <li>企业采购 </li>
+                        <li>客户服务 v</li>
+                        <li>手机文轩 v</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <div class="top-2">
+                <div class="top-2-nav">
+                    <a href="">
+                        <img src="../images/logo.png" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text">
+                        <button type="submit">搜索</button>
+                    </div>
+
+                    <a href="" class="car-1">
+                        <div>
+                            购物车
+                        </div>
+                    </a>
+                    <div class="search-box-1" style="color: #999;">
+                        热搜:
+                        <a href=""><span>文轩购书卡<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>9.9元专区<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>朝鲜战争<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>今日秒杀<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>5G时代<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                    </div>
+                    <div class="search-383">
+                        <a href="" style="color:#999 ;">高级搜索</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏 -->
+            <div class="nav">
+                <div class="nav-1">
+                    <img src="../images/navmenuicon.png" alt="">
+                    <span>
+                        商品分类
+                    </span>
+                </div>
+                <div class="nav-2">
+                    <ul>
+                        <li><a href="../paging/paging.html" style="color: red;">优惠券</a></li>
+                        <li><a href="../paging/paging.html" style="color: red;">图书畅销榜</a></li>
+                        <li><a href="../paging/paging.html">新书热卖榜</a></li>
+                        <li><a href="../paging/paging.html">童书绘本</a></li>
+                        <li><a href="../paging/paging.html">小说文学</a></li>
+                        <li><a href="../paging/paging.html">社科经营</a></li>
+                        <li><a href="../paging/paging.html">网络科技</a></li>
+                        <li><a href="../paging/paging.html">医学</a></li>
+                        <li><a href="../paging/paging.html">教材教辅</a></li>
+                        <li><a href="../paging/paging.html">行为艺术</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 商品页 -->
+            <div class="menu">
+                <div style="font-size: 18px; color: #666;font-weight: 700; margin-bottom: 20px;">全部商品</div>
+                <div class="commodity">
+                </div>
+            </div>
+            <!-- 分页选择 -->
+            <div id="fenye"></div>
+        </div>
+
+    </div>
+    </div>
+    <script>
+        let mul = document.querySelector('.commodity');
+
+        getDatax();
+
+        function getDatax() {
+            let xhr = new XMLHttpRequest();
+            xhr.open('get', './sousuo.json');
+            xhr.send();
+            xhr.onload = function () {
+                let res1 = JSON.parse(xhr.responseText);
+                rendere(res1);
+                // console.log(1);
+            }
+        }
+
+        function rendere(res1) {
+            console.log(res1);
+            res1.forEach((item, index) => {
+                let str = `
+                <div class="book">
+                        <div class="img"><img src="${item.tupian}" alt=""></div>
+                        <div class="name" style="height: 40px; overflow: hidden;width: 200px;">${item.biaoti}</div>
+                        <div class="price">
+                            <span>${item.jiage}</span>
+                            <span>${item.jiage1}</span>
+                        </div>
+                    </div>
+        `;
+                mul.innerHTML += str;
+            })
+        }
+    </script>
+</body>
+
+</html>

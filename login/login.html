@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <div class="login-header">
+        <div class="center-1">
+            <a href="../index/index.html" title="文轩网，新华书店"></a>
+        </div>
+    </div>
+    <div class="login-wrapper">
+        <div class="center-2">
+            <div class="login-box">
+                <div class="tabs">
+                    <span>密码登录</span>
+                </div>
+                <div class="form-wrapper">
+                    <form action="./login.php" class="account-tab" method="GET">
+                        <input type="text" name="username" placeholder="账号">
+                        <input type="password" placeholder="密码" name="password">
+                        <label for="" style="color: red; margin-left: 110px;display: none;">用户名或者密码错误</label>
+                        <button id="login-btn" class="disabled">登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

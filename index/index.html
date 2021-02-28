@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文轩网</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./utils.js"></script>
+    <link rel="stylesheet" href="./swiper-master/package/swiper-bundle.min.css">
+    <script src="./jquery/jquery.min.js"></script>
+</head>
+
+<body style="width: 100%;">
+    <div id="page">
+        <div class="col-main">
+            <!-- 顶部 -->
+            <div class="top-1">
+                <div class="top-nav">
+                    <ul>
+                        <li>欢迎光临文轩网!</li>
+                        <li>
+                            <a href="../login/login.html">
+                                请
+                                <span style="color: red;">
+                                    登录
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../register/zhuce.html">
+                                免费注册
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="top-nav-2">
+                        <li>我的文轩 v</li>
+                        <li>企业采购 </li>
+                        <li>客户服务 v</li>
+                        <li>手机文轩 v</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <div class="top-2">
+                <div class="top-2-nav">
+                    <a href="">
+                        <img src="../images/logo.png" alt="">
+                    </a>
+                    <div class="search-box">
+                        <input type="text">
+                        <button type="submit">搜索</button>
+                    </div>
+
+                    <a href="" class="car-1">
+                        <div>
+                            购物车
+                        </div>
+                    </a>
+                    <div class="search-box-1" style="color: #999;">
+                        热搜:
+                        <a href=""><span>文轩购书卡<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>9.9元专区<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>朝鲜战争<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>今日秒杀<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                        <a href=""><span>5G时代<img src="../images/hot-045.gif" alt=""></span></a>
+                        <span>|</span>
+                    </div>
+                    <div class="search-383">
+                        <a href="" style="color:#999 ;">高级搜索</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏 -->
+            <div class="nav">
+                <div class="nav-1">
+                    <img src="../images/navmenuicon.png" alt="">
+                    <span>
+                        商品分类
+                    </span>
+                </div>
+                <div class="nav-2">
+                    <ul>
+                        <li><a href="" style="color: red;">优惠券</a></li>
+                        <li><a href="" style="color: red;">图书畅销榜</a></li>
+                        <li><a href="../paging/paging.html">新书热卖榜</a></li>
+                        <li><a href="../paging/paging.html">童书绘本</a></li>
+                        <li><a href="../paging/paging.html">小说文学</a></li>
+                        <li><a href="../paging/paging.html">社科经营</a></li>
+                        <li><a href="../paging/paging.html">网络科技</a></li>
+                        <li><a href="../paging/paging.html">医学</a></li>
+                        <li><a href="../paging/paging.html">教材教辅</a></li>
+                        <li><a href="../paging/paging.html">行为艺术</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="swiper-container" style="   margin-left: -395px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/2000-480 (1).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/2000-480 (2).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/2000-480 (3).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/2000-480-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/2000-480.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- 侧边导航栏 -->
+                <div id="cont" style="background: rgba(255,253,252,.9);">
+                    <dl class="cat-cont" data-id="1">
+                        <dt>童书 育儿</dt>
+                        <dd><a href="">绘本</a><b></b></dd>
+                        <dd><a href="">国学启蒙</a><b></b></dd>
+                        <dd><a href="">趣味童书</a><b></b></dd>
+                        <dd><a href="">幼小衔接入学</a><b></b></dd>
+                        <dd><a href="">兴趣培养</a><b></b></dd>
+                    </dl>
+                    <dl class="cat-cont" data-id="1">
+                        <dt>文学 小说</dt>
+                        <dd><a href="">外国文学</a><b></b></dd>
+                        <dd><a href="">国学</a><b></b></dd>
+                        <dd><a href="">民间故事</a><b></b></dd>
+                        <dd><a href="">青春</a><b></b></dd>
+                        <dd><a href="">情感</a><b></b></dd>
+                        <dd><a href="">科幻</a><b></b></dd>
+                        <dd><a href="">职场</a><b></b></dd>
+                    </dl>
+                    <dl class="cat-cont" data-id="1">
+                        <dt>社科 经管</dt>
+                        <dd><a href="">经济读物</a><b></b></dd>
+                        <dd><a href="">市场营销</a><b></b></dd>
+                        <dd><a href="">房地产</a><b></b></dd>
+                        <dd><a href="">中国共产党</a><b></b></dd>
+                        <dd><a href="">领导人著作</a><b></b></dd>
+                    </dl>
+                    <dl class="cat-cont">
+                        <dt>行业 职业</dt>
+                        <dd><a href="">电子商务</a><b></b></dd>
+                        <dd><a href="">医学科普</a><b></b></dd>
+                        <dd><a href="">室内装修</a><b></b></dd>
+                    </dl>
+                    <dl class="cat-cont">
+                        <dt>教材 教辅</dt>
+                        <dd><a href="">小学教材</a><b></b></dd>
+                        <dd><a href="">科普</a><b></b></dd>
+                        <dd><a href="">读物</a><b></b></dd>
+                        <dd><a href="">公务员</a><b></b></dd>
+                    </dl>
+                    <dl class="cat-cont">
+                        <dt>生活 艺术</dt>
+                        <dd><a href="">成功学</a><b></b></dd>
+                        <dd><a href="">孕产</a><b></b></dd>
+                        <dd><a href="">亲子</a><b></b></dd>
+                        <dd><a href="">烹饪</a><b></b></dd>
+                    </dl>
+                    <dl class="cat-cont">
+                        <dt>
+                            <a href="" style="font-size: 14px;color: black;">音像</a>
+                            <a href="" style="font-size: 14px;color: black;">百货</a>
+                            <a href="" style="font-size: 14px;color: black;">电子书</a>
+                        </dt>
+                    </dl>
+                    <dl style="margin-bottom: 24px;">
+                        <dt>
+                            <a href="" style="font-size: 14px;color: black; ">全部分类</a>
+                        </dt>
+                    </dl>
+                </div>
+                <!-- 滑动导航栏 -->
+                <div class="nav_right hide">
+                    <div id="cont-2 hide" data-id="1">
+
+                    </div>
+                    <div id="cont-2 hide" data-id="1">
+
+                    </div>
+                    <div id="cont-2 hide" data-id="1">
+
+                    </div>
+                    <div id="cont-2 hide" data-id="1">
+
+                    </div>
+                    <div id="cont-2 hide" data-id="1">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- 手风琴 -->
+            <div class="accordion">
+                <div style="background-color: red; width: 402px;"></div>
+                <div style="background-color: black;"></div>
+                <div style="background-color: white;"></div>
+                <div style="background-color: blue;"></div>
+                <div style="background-color: darkcyan;"></div>
+            </div>
+            <!-- 促销模块 -->
+            <div class="promotion">
+                <div class="promotion_book"><a href="../paging/paging.html">
+                        <img src="../images/1201530582_49_0_original_800x800.jpg" alt="">
+                        <p class="book-name">雾都孤儿</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥20.0</div>
+                            <div class="yuanjia">¥35.0</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="../paging/paging.html">
+                        <img src="../images/1201334650_22_1.jpg" alt="">
+                        <p class="book-name">UTOP权威探秘百科</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥15.8</div>
+                            <div class="yuanjia">¥24.8</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="../paging/paging.html">
+                        <img src="../images/1201837489_49_0_original_800x800.jpg" alt="">
+                        <p class="book-name">事实</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥58.4</div>
+                            <div class="yuanjia">¥99</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="../paging/paging.html">
+                        <img src="../images/1200974125_2_0.jpg" alt="">
+                        <p class="book-name">三体</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥25.0</div>
+                            <div class="yuanjia">¥45.0</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="../paging/paging.html">
+                        <img src="../images/1202267381_49_0_original_800x800.jpg" alt="">
+                        <p class="book-name">全脑开发</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥35.2</div>
+                            <div class="yuanjia">¥72</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="../paging/paging.html">
+                        <img src="../images/1202237552_49_0_original_800x800.jpg" alt="">
+                        <p class="book-name">富爸爸</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥23.0</div>
+                            <div class="yuanjia">¥40.0</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="">
+                        <img src="../images/1201703463_49.jpg" alt="">
+                        <p class="book-name">福建寻宝记</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥42.0</div>
+                            <div class="yuanjia">¥70.2</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="">
+                        <img src="../images/1202214018_0_1_800x800.jpg" alt="">
+                        <p class="book-name">投机者告白</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥40.3</div>
+                            <div class="yuanjia">¥83.0</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="">
+                        <img src="../images/1202353623_0_1_original_800x800.jpg" alt="">
+                        <p class="book-name">幼学琼林</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥32.0</div>
+                            <div class="yuanjia">¥65.2</div>
+                        </div>
+                    </a></div>
+                <div class="promotion_book"><a href="">
+                        <img src="../images/1202245885_0_1_original_800x800.jpg" alt="">
+                        <p class="book-name">中国法典</p>
+                        <div class="price">
+                            <div class="miaoshajia">秒杀价:¥12.6</div>
+                            <div class="yuanjia">¥28.0</div>
+                        </div>
+                    </a></div>
+            </div>
+            <!-- 文轩聚焦 -->
+            <div class="choiceness">
+                <div class="choiceness-tab1">
+                    文轩聚焦
+                    <img src="../images/common-module-2020-title-icon.png" alt="">
+                </div>
+                <div class="choiceness-tab2">
+                    <div class="tab-thenme">
+
+                    </div>
+                    <div class="tab-cont">
+                        <div class="tab-bt">
+                            <div class="tab-book">
+                                <img src="../images/1202320588_0_0_original_800x800.jpg" alt="">
+                                <h6>朝鲜战争(上下)/王树增战争</h6>
+                                <span>王树增</span>
+                                <div class="jg">
+                                    <p class="jiage">¥73.9</p>
+                                    <span class="jiage2">¥96</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202214160_0_1_800x800 (1).jpg" alt="">
+                                <h6>雪国之劫</h6>
+                                <span>(日)东野圭吾</span>
+                                <div class="jg">
+                                    <p class="jiage">￥28.4</p>
+                                    <span class="jiage2">￥45.00</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202250951_0_0_original_800x800 (1).jpg" alt="">
+                                <h6>还是钟南山</h6>
+                                <span>魏东海</span>
+                                <div class="jg">
+                                    <p class="jiage">￥36.0</p>
+                                    <span class="jiage2">￥48.00</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202126170_0_2_800x800.jpg" alt="">
+                                <h6>你当像鸟飞往你的山</h6>
+                                <span>(美)塔拉·韦斯特弗(Tara Westov</span>
+                                <div class="jg">
+                                    <p class="jiage">￥44.3</p>
+                                    <span class="jiage2">￥59.00</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202126170_0_2_800x800.jpg" alt="">
+                                <h6>你当像鸟飞往你的山</h6>
+                                <span>(美)塔拉·韦斯特弗(Tara Westov</span>
+                                <div class="jg">
+                                    <p class="jiage">￥44.3</p>
+                                    <span class="jiage2">￥59.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-bt">
+                            <div class="tab-book">
+                                <img src="../images/1202206665_0_1_800x800.jpg" alt="">
+                                <h6>生鲜电商的新零售之路</h6>
+                                <span>舒雍</span>
+                                <div class="jg">
+                                    <p class="jiage">￥51.8</p>
+                                    <span class="jiage2">￥69.00</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202203916_0_1_800x800 (1).jpg" alt="">
+                                <h6>新太空竞赛 埃隆·马斯克,杰</h6>
+                                <span>(美)蒂姆·费恩霍尔茨(Tim Fernh</span>
+                                <div class="jg">
+                                    <p class="jiage">￥43.1</p>
+                                    <span class="jiage2">￥59.00</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202213164_0_0_800x800.jpg" alt="">
+                                <h6>抖音营销 原理、策略与实操</h6>
+                                <span>清博大数据</span>
+                                <div class="jg">
+                                    <p class="jiage">￥29.9</p>
+                                    <span class="jiage2">￥39.80</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202210883_0_1_800x800.jpg" alt="">
+                                <h6>护士的故事</h6>
+                                <span>(英)克里斯蒂·沃森(Christie Wat</span>
+                                <div class="jg">
+                                    <p class="jiage">￥31.4</p>
+                                    <span class="jiage2">￥56.00</span>
+                                </div>
+                            </div>
+                            <div class="tab-book">
+                                <img src="../images/1202207478_0_1_800x800.jpg" alt="">
+                                <h6>剧变 人类社会与国家危机</h6>
+                                <span>(美)贾雷德·戴蒙德(Jared Diam</span>
+                                <div class="jg">
+                                    <p class="jiage">￥73.5</p>
+                                    <span class="jiage2">￥98.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./swiper-master/package/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        $('.accordion div').on('mouseover', function () {
+            let res = $(this).siblings().finish().animate({
+                width: 202
+            }).end().finish().animate({
+                width: 402
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>
